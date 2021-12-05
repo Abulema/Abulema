@@ -1,0 +1,39 @@
+<head>
+    <link rel="stylesheet" href="../static/items.css">
+    <title>Book List</title>
+</head>
+<div class="nav">
+    <a href="/" class="active">Home</a>
+    <a href="/add">Buy books here</a>
+    <a href="/items">books</a>
+</div>
+
+<br><br>
+
+<center>
+    <button><a href="/add">Buy book Here</a></button>
+</center>
+
+{{crops}}
+<br><br>
+<table>
+    <tr>
+        <th>Book</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Time</th>
+    </tr>
+
+    {% for cro in book %}
+    <tr>
+        <td>{{cro.book_name}}</td>
+        <td>{{cro.address}}</td>
+        <td>{{cro.phone}}</td>
+        <td>{{cro.time}}</td>
+
+        <td><a href="{{ url_for( 'edit', id=cro.ID)}}">Edit</a></td>
+        <td><a href="{{ url_for( 'delete_book', id=cro.ID)}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<br><br><br>

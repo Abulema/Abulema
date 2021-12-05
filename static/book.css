@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(241, 14, 14);
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    text-align: right;
+    padding-right: 40px;
+}
+
+h1 {
+    text-align: right;
+    padding-right: 100px;
+    font-family: cursive;
+}
+
+input {
+    width: 300px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.img {
+    position: relative;
+    padding-top: -300px;
+    padding-left: 40px;
+}
+
+#img {
+    box-shadow: 2px 2px 2px 2px white;
+    border-radius: 10px;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav a:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: red;
+}
+
+a {
+    text-align: right;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    font-family: cursive;
+}

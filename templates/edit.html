@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="../static/edit.css">
+    <title>Edit</title>
+</head>
+
+
+<h1>Edit Books</h1>
+
+<form action="{{ url_for( 'edit', id=book.ID)}}" method="POST">
+
+    <input type="text" name="book_name" value="{{book.book_name}}" placeholder="Book name">
+    <br><br>
+    <input type="text" name="address" value="{{book.address}}" placeholder="Address">
+    <br><br>
+    <input type="number" name="phone" value="{{book.phone}}" placeholder="Phone">
+    <br><br>
+    <input type="time" name="time" value="{{book.time}}" placeholder="time">
+    <br><br>
+    <input type="submit" value="submit">
+
+</form>

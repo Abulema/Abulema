@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(241, 14, 14);
+    color: white;
+    font-family: cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+table th {
+    padding: 30px;
+}
+
+td {
+    padding: 30px;
+    border: 2px white solid;
+}
+
+a {
+    text-align: right;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    font-family: cursive;
+}
+
+button {
+    color: red;
+    background-color: red;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav a:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: red;
+}
